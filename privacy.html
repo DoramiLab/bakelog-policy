@@ -1,129 +1,168 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy - BakeLog</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – BakeLog</title>
   <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: #fefefe;
-      color: #333;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background: #fafaf8;
     }
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem 2rem;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      border-radius: 8px;
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
     }
-    h1 {
+
+    header {
+      margin-bottom: 48px;
+    }
+
+    header h1 {
       font-size: 2rem;
-      margin-bottom: 0.5rem;
-      color: #222;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: #111;
     }
-    .date {
-      font-size: 0.9rem;
+
+    header .meta {
+      margin-top: 8px;
+      font-size: 0.875rem;
       color: #888;
-      margin-bottom: 2rem;
     }
+
+    section {
+      margin-bottom: 36px;
+    }
+
     h2 {
-      margin-top: 2rem;
-      color: #555;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 0.3rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #111;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #e8e8e4;
     }
-    h3 {
-      margin-top: 1.5rem;
+
+    p {
+      margin-bottom: 10px;
       color: #444;
     }
-    p {
-      margin: 0.5rem 0 1rem 0;
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 10px;
+      color: #444;
     }
+
+    ul li {
+      margin-bottom: 6px;
+    }
+
     a {
-      color: #007BFF;
+      color: #b07040;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
+    .tag {
+      display: inline-block;
+      background: #f0ece6;
+      color: #7a5c3a;
+      font-size: 0.75rem;
+      font-weight: 500;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+    }
+
     footer {
-      text-align: center;
-      padding: 2rem 0 1rem 0;
-      font-size: 0.9rem;
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid #e8e8e4;
+      font-size: 0.8rem;
       color: #aaa;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <main>
-    <h1>Privacy Policy - BakeLog</h1>
-    <p class="date">Effective date: August 2025</p>
+  <div class="container">
+    <header>
+      <h1>Privacy Policy</h1>
+      <p class="meta">BakeLog &nbsp;·&nbsp; Effective date: April 13, 2026</p>
+    </header>
 
-    <h2>한국어</h2>
-    <h3>1. 수집 정보</h3>
-    <p>BakeLog는 사용자의 기기 카메라 접근 및 이메일을 요청합니다. 그 외의 개인정보는 수집하지 않습니다. 이메일은 사용자가 입력한 레시피 정보를 백업하는 용도로 사용됩니다.</p>
+    <section>
+      <h2>1. Information We Collect</h2>
 
-    <h3>2. 카메라 사용 목적</h3>
-    <p>카메라 권한은 레시피 책 사진을 촬영하기 위해서만 사용됩니다. 촬영된 이미지는 AI 서비스(Gemini)로 전송되어 자동 레시피 추출에 사용됩니다.</p>
+      <p><strong>Account Information</strong></p>
+      <p>When you choose to link an account, we collect your email address (email sign-in) or a unique identifier from Google or Apple (social sign-in). Anonymous use is fully supported without providing any personal information.</p>
 
-    <h3>3. 데이터 저장</h3>
-    <p>처리 후 이미지는 서버나 기기에 저장되지 않고 즉시 삭제됩니다. 이메일은 Firebase를 통해 안전하게 저장됩니다.</p>
+      <p><strong>User Content</strong></p>
+      <p>Recipes, bake logs, and notes you create are stored in Firebase Firestore. Pro users who enable photo sync have their photos uploaded to Firebase Storage.</p>
 
-    <h3>4. 제3자 서비스</h3>
-    <p>촬영된 이미지는 Gemini AI에 의해 처리되며, 이메일 데이터는 Firebase를 통해 백업됩니다. 다른 제3자 서비스에는 전달되지 않습니다.</p>
+      <p><strong>Camera &amp; Photos</strong></p>
+      <p>Camera access is used to capture photos of recipe books or bake logs. Photos may be sent to Google Gemini AI for recipe extraction and are not retained on our servers after processing. Pro users may optionally sync bake log photos to Firebase Storage.</p>
 
-    <h3>5. 사용자 권리</h3>
-    <p>사용자는 언제든지 기기 설정에서 카메라 접근 권한을 철회할 수 있으며, BakeLog는 처리 후 이미지를 보관하지 않습니다. 이메일 데이터 삭제 요청은 언제든 할 수 있습니다.</p>
+      <p><strong>Usage Data</strong></p>
+      <p>We collect anonymized analytics data (app launches, feature usage, session duration) via Firebase Analytics to improve the app. This data is linked to an anonymous device identifier, not your personal identity.</p>
 
-    <h3>6. 문의</h3>
-    <p>Email: <a href="mailto:doramii.lab@gmail.com">doramii.lab@gmail.com</a></p>
+      <p><strong>Crash Reports</strong></p>
+      <p>We collect crash and error reports via Firebase Crashlytics to diagnose and fix bugs.</p>
 
-    <h2>English</h2>
-    <h3>1. Information We Collect</h3>
-    <p>BakeLog requests access to your device camera and your email. No other personal information is collected. Email is used to back up recipe information you provide.</p>
+      <p><strong>Purchase History</strong></p>
+      <p>We track in-app purchase events (e.g. Pro upgrade, AI credit purchases) for analytics purposes. Payment processing is handled entirely by Apple.</p>
+    </section>
 
-    <h3>2. Purpose of Camera Usage</h3>
-    <p>The camera permission is used solely to capture photos of recipe books. These images are sent to our AI service (Gemini) for automatic recipe extraction.</p>
+    <section>
+      <h2>2. How We Use Your Information</h2>
+      <ul>
+        <li>Provide and sync app functionality across devices (account-linked users)</li>
+        <li>Improve app quality through analytics and crash reporting</li>
+        <li>Process AI recipe extraction via Gemini</li>
+      </ul>
+    </section>
 
-    <h3>3. Data Storage</h3>
-    <p>We do not store any photos on our servers or devices after processing. All images are processed temporarily and discarded immediately. Email is securely stored using Firebase.</p>
+    <section>
+      <h2>3. Third-Party Services</h2>
+      <ul>
+        <li><strong>Firebase (Google)</strong> — Authentication, database, storage, analytics, crash reporting<br>
+          <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a>
+        </li>
+        <li><strong>Google Gemini AI</strong> — Recipe extraction from images</li>
+        <li><strong>Apple In-App Purchase</strong> — Payment processing</li>
+      </ul>
+    </section>
 
-    <h3>4. Third-Party Services</h3>
-    <p>The captured images are processed by Gemini AI, and email data is backed up via Firebase. No other third-party service receives your data.</p>
+    <section>
+      <h2>4. Data Retention</h2>
+      <p>Anonymous accounts and their data are retained until you delete the app. Linked accounts retain data until account deletion is requested. Crash reports are retained for 90 days.</p>
+    </section>
 
-    <h3>5. User Rights</h3>
-    <p>You can revoke camera access at any time in your device settings. BakeLog will not retain any images after processing. Email deletion can be requested anytime.</p>
+    <section>
+      <h2>5. Your Rights</h2>
+      <p>You may request deletion of your account and associated data by contacting us. You can revoke camera or photo library access at any time in your device settings.</p>
+    </section>
 
-    <h3>6. Contact</h3>
-    <p>Email: <a href="mailto:doramii.lab@gmail.com">doramii.lab@gmail.com</a></p>
-
-    <h2>日本語</h2>
-    <h3>1. 収集する情報</h3>
-    <p>BakeLogはユーザーのデバイスカメラへのアクセスおよびメールを要求します。他の個人情報は収集しません。メールはユーザーが入力したレシピ情報のバックアップに使用されます。</p>
-
-    <h3>2. カメラ使用の目的</h3>
-    <p>カメラ権限はレシピ本の写真を撮影するためだけに使用されます。撮影された画像はAIサービス(Gemini)に送信され、自動レシピ抽出に使用されます。</p>
-
-    <h3>3. データ保存</h3>
-    <p>処理後の画像はサーバーやデバイスに保存されず、すぐに破棄されます。メールはFirebaseを通じて安全に保存されます。</p>
-
-    <h3>4. 第三者サービス</h3>
-    <p>撮影された画像はGemini AIによって処理され、メールデータはFirebaseでバックアップされます。他の第三者サービスには渡されません。</p>
-
-    <h3>5. ユーザーの権利</h3>
-    <p>ユーザーはデバイス設定でいつでもカメラアクセスを取り消すことができます。BakeLogは処理後に画像を保持しません。メール削除はいつでもリクエスト可能です。</p>
-
-    <h3>6. お問い合わせ</h3>
-    <p>Email: <a href="mailto:doramii.lab@gmail.com">doramii.lab@gmail.com</a></p>
+    <section>
+      <h2>6. Contact</h2>
+      <p><a href="mailto:doramii.lab@gmail.com">doramii.lab@gmail.com</a></p>
+    </section>
 
     <footer>
-      &copy; 2025 BakeLog. All rights reserved.
+      &copy; 2026 Dorami Lab. All rights reserved.
     </footer>
-  </main>
+  </div>
 </body>
 </html>
