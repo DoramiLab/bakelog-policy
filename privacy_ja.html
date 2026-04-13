@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>プライバシーポリシー – BakeLog</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background: #fafaf8;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
+    }
+
+    header {
+      margin-bottom: 48px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: #111;
+    }
+
+    header .meta {
+      margin-top: 8px;
+      font-size: 0.875rem;
+      color: #888;
+    }
+
+    section {
+      margin-bottom: 36px;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #111;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #e8e8e4;
+    }
+
+    p {
+      margin-bottom: 10px;
+      color: #444;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 10px;
+      color: #444;
+    }
+
+    ul li {
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: #b07040;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid #e8e8e4;
+      font-size: 0.8rem;
+      color: #aaa;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>プライバシーポリシー</h1>
+      <p class="meta">BakeLog &nbsp;·&nbsp; 施行日: 2026年4月13日</p>
+    </header>
+
+    <section>
+      <h2>1. 収集する情報</h2>
+
+      <p><strong>アカウント情報</strong></p>
+      <p>アカウント連携を選択した場合、メールサインイン時はメールアドレスを、GoogleまたはAppleのソーシャルサインイン時は一意の識別子を収集します。個人情報の提供なしに匿名で利用することもできます。</p>
+
+      <p><strong>ユーザーコンテンツ</strong></p>
+      <p>作成したレシピ、ベイキングログ、メモはFirebase Firestoreに保存されます。写真同期を有効にしたProユーザーの写真はFirebase Storageにアップロードされます。</p>
+
+      <p><strong>カメラおよび写真</strong></p>
+      <p>カメラへのアクセスは、レシピ本やベイキングログの写真撮影に使用されます。レシピ抽出のため写真がGoogle Gemini AIに送信される場合がありますが、処理完了後にサーバーへの保存は行いません。Proユーザーはベイキングログの写真をFirebase Storageに同期することができます。</p>
+
+      <p><strong>利用データ</strong></p>
+      <p>アプリ改善のため、Firebase Analyticsを通じて匿名化された分析データ（アプリ起動、機能利用、セッション時間など）を収集します。このデータは匿名のデバイス識別子に紐付けられており、個人の身元とは連携しません。</p>
+
+      <p><strong>クラッシュレポート</strong></p>
+      <p>バグの診断と修正のため、Firebase Crashlyticsを通じてクラッシュおよびエラーレポートを収集します。</p>
+
+      <p><strong>購入履歴</strong></p>
+      <p>分析目的でアプリ内購入イベント（Proアップグレード、AIクレジット購入など）を記録します。決済処理はすべてAppleが行います。</p>
+    </section>
+
+    <section>
+      <h2>2. 情報の利用目的</h2>
+      <ul>
+        <li>アカウント連携ユーザーのデバイス間でのアプリ機能の提供と同期</li>
+        <li>分析およびクラッシュレポートによるアプリ品質の改善</li>
+        <li>GeminiによるAIレシピ抽出処理</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. 第三者サービス</h2>
+      <ul>
+        <li><strong>Firebase (Google)</strong> — 認証、データベース、ストレージ、分析、クラッシュレポート<br>
+          <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a>
+        </li>
+        <li><strong>Google Gemini AI</strong> — 画像からのレシピ抽出</li>
+        <li><strong>Apple アプリ内課金</strong> — 決済処理</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. データの保管</h2>
+      <p>匿名アカウントとそのデータはアプリ削除まで保管されます。連携アカウントのデータは削除リクエストがあるまで保管されます。クラッシュレポートは90日間保管されます。</p>
+    </section>
+
+    <section>
+      <h2>5. ユーザーの権利</h2>
+      <p>下記の連絡先にお問い合わせいただくことで、アカウントおよび関連データの削除を請求できます。カメラやフォトライブラリへのアクセス権限は、端末の設定からいつでも取り消すことができます。</p>
+    </section>
+
+    <section>
+      <h2>6. お問い合わせ</h2>
+      <p><a href="mailto:doramii.lab@gmail.com">doramii.lab@gmail.com</a></p>
+    </section>
+
+    <footer>
+      &copy; 2026 Dorami Lab. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
